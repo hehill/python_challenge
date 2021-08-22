@@ -4,6 +4,7 @@ import pandas as pd
 cwd = os.getcwd()
 file_path = os.path.join(cwd, "PyPoll", "Resources", "election_data.csv")
 df = pd.read_csv(file_path)
+
 votes_tot = df["Voter ID"].nunique()
 cand_votes = pd.DataFrame(df["Candidate"].value_counts())
 cand_votes = cand_votes.reset_index().rename(columns = {"index" : "Candidate_Name", "Candidate" : "Vote_Count"})
@@ -20,3 +21,14 @@ print(cand_votes)
 print("-----------------------------")
 print(f"The winner is {winner}!")
 print("-----------------------------")
+
+output_path = os.path.join(cwd, "PyPoll", "output.txt")
+with open(output_path, "w") as text_file:
+    print("Election Results", file= text_file)
+    print("-----------------------------", file= text_file)
+    print(f"Total Votes: {votes_tot}", file= text_file)
+    print("-----------------------------", file= text_file)
+    print(cand_votes, file= text_file)
+    print("-----------------------------", file= text_file)
+    print(f"The winner is {winner}!", file= text_file)
+    print("-----------------------------", file= text_file)
