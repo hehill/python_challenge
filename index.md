@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## PyBank
 
-You can use the [editor on GitHub](https://github.com/hehill/python_challenge/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Created a Python script for analyzing provided financial records of a hypothetical company. This script calculates each of the following:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- The  total number of months included in the data
+- The net total amount of profit/losses over the entire period
+- The changes of profit/losses from month to month and the average of those changes
+- The greatest increase in profits
+- The greatest decrease in  profits (largest loss)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### Script Output
+```text
+Financial Analysis
+-----------------------------
+Total Months: 86
+Net Profits: 38382578
+Average Change: $-2288.2
+Greatest Increase in Profits: Feb-2012 ($1926159)
+Greatest Decrease in Profits: Sep-2013 ($-2196167)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## PyPoll
+Created Python script that analyzes poll data from a hypothetical county election. This script calculates the following:
 
-### Jekyll Themes
+- The total number of votes cast
+- A complete list of candidates who received votes
+- The percentage of votes each candidate won
+- The total number of votes each candidate won
+- The winner of the election based on popular vote
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hehill/python_challenge/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Script Output
+```text
+Election Results
+-----------------------------
+Total Votes: 3521001
+-----------------------------
+  Candidate_Name  Vote_Count Percent_of_Total_Votes
+0           Khan     2218231                  63.0%
+1         Correy      704200                  20.0%
+2             Li      492940                  14.0%
+3       O'Tooley      105630                   3.0%
+-----------------------------
+The winner is Khan!
+-----------------------------
+```
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
